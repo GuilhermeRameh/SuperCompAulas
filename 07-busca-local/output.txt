@@ -1,0 +1,12 @@
+Mochila 0: -1 1 -1 -1 -1 -1 1 1 -1 -1 Peso: 8 Valor: 202
+Mochila 1: 1 -1 0 -1 -1 1 0 0 0 0 Peso: 8 Valor: 140
+Mochila 2: -1 1 -1 -1 1 0 0 -1 -1 -1 Peso: 5 Valor: 91
+Mochila 3: -1 1 1 0 -1 -1 -1 0 -1 0 Peso: 8 Valor: 101
+Mochila 4: -1 -1 -1 -1 1 -1 1 1 -1 0 Peso: 7 Valor: 129
+Mochila 5: -1 1 -1 1 1 -1 0 0 0 -1 Peso: 8 Valor: 96
+Mochila 6: -1 -1 1 -1 1 -1 0 -1 -1 -1 Peso: 7 Valor: 28
+Mochila 7: 1 -1 0 -1 1 -1 0 1 -1 0 Peso: 7 Valor: 156
+Mochila 8: -1 1 1 0 0 0 -1 -1 0 -1 Peso: 8 Valor: 101
+Mochila 9: 1 1 0 0 -1 0 0 1 0 -1 Peso: 8 Valor: 229
+
+Melhor Valor: 229  Melhor Peso: 8
