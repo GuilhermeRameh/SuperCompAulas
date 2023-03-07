@@ -37,15 +37,19 @@ void solucaoAleatoriezada(int reps) {
       itens.push_back(obj);
     }
 
-    // SEPARAÇÃO ALEATORIA DE 50% DOS OBJETOS
-    for(int i=0; i<N; i++){
-      if(rand()%2==0) 
-          mochila[i] = itens[i];
-      else mochila[i].id=-1;
-    }
+
 
     for (int j=0; j<reps; j++){
 
+      
+      // SEPARAÇÃO ALEATORIA DE 50% DOS OBJETOS
+      for(int i=0; i<N; i++){
+        if(rand()%2==0) 
+            mochila[i] = itens[i];
+        else mochila[i].id=-1;
+      }
+
+      cout << "Mochila " << j << ": ";
 
       double valorT = 0;
       pesoT = W;
@@ -60,6 +64,7 @@ void solucaoAleatoriezada(int reps) {
           }
           else mochila[i].id = 0;
         }
+        cout << mochila[i].id << " ";
       }
       pesoT = W - pesoT;
       if (valorT > melhorValor){
@@ -67,12 +72,16 @@ void solucaoAleatoriezada(int reps) {
         melhorPeso = pesoT;
         melhor = mochila;
       }
+
+      cout << "Peso: " << pesoT << " Valor: " << valorT << "\n";
     }
     cout << "\nMelhor Valor: " << melhorValor << "  Melhor Peso: " << melhorPeso << "\n";
 };
 
 
+// TODO: Pode mudar as checagens e variaveis "melhores" pra soh fazer um for e percorrer a mochila guardada em "melhor"
+
 int main () {
-    solucaoAleatoriezada(100);
+    solucaoAleatoriezada(10);
     return 0;
 }
